@@ -1,12 +1,161 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My HTML Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>This is real This is me This is exactly who im supposed to beeyeeyeeeeeeeee</h1>
+
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#"> </a>
+            <span uk-icon="icon: comments; ratio: 1.5"></span>
+            <a class="uk-navbar-item uk-logo" href="#">teamjuli0</a>
+        </div>
+
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li id="homeButton">
+                    <a href="#">Home</a>
+                </li>
+                <li id="aboutMeButton">
+                    <a href="#">About Me</a>
+                </li>
+                <li id="contactButton">
+                    <a href="#">Contact</a>
+                </li>
+                <!-- <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                                <a href="#">Active</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li class="uk-nav-header">Header</li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                            <li class="uk-nav-divider"></li>
+                            <li>
+                                <a href="#">Item</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> -->
+                <li>
+                    <a href="#"> </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <br>
+
+    <div class="uk-container">
+        <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
+            <div>
+
+            </div>
+            <div class="ukwidth-expand@m">
+                <div class="uk-text-large uk-text-bold">YOU ARE ABSOLUTELY UNIQUE</div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
+            <div>
+
+            </div>
+            <div class="ukwidth-expand@m">
+                <div class="uk-text-small uk-text-bold">JUST LIKE EVERYONE ELSE</div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="home">
+            <div uk-switcher="animation: uk-animation-fade">
+                <button class="uk-button uk-button-default" type="button">Product Info</button>
+            </div>
+
+            <ul class="uk-switcher uk-margin uk-flex" id="websites">
+                <li>
+                    <div>
+                        <div class="uk-card uk-card-small uk-card-body">
+                            <a class="uk-navbar-item uk-logo" href="https://teamjuli0.github.io/SuperDuperAmazingSpectacular/index.html" target="_blank">RayRay</a>
+                            <img src="assets/images/RayRay.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="aboutMe">
+            <div class="uk-card uk-card-small uk-card-body">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sed iure asperiores reprehenderit consequuntur error nemo
+                    a dicta! Ipsum eos velit accusamus repellat nam eligendi officia odio consectetur, labore doloremque.
+                </p>
+
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="uk-card uk-card-small uk-card-body">
+
+                <form>
+                    <div class="uk-margin">
+                        <h3 class="uk-logo">Name</h3>
+                        <input type="text" class="uk-input uk-form-width-large" placeholder="John Doe">
+                    </div>
+                    <div class="uk-margin">
+                        <h3 class="uk-logo">Email</h3>
+                        <input type="text" class="uk-input uk-form-width-large" placeholder="john.doe@email.com">
+                    </div>
+                    <div class="uk-margin">
+                        <h3 class="uk-logo">Message</h3>
+                        <input type="text" class="uk-input uk-form-width-large" id="message">
+                    </div>
+                    <br>
+                    <div>
+                        <button class="uk-button uk-button-primary">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
