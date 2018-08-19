@@ -3,7 +3,6 @@ $(document).ready(function () {
     var homeButton = $("#homeButton");
     var aboutMeButton = $("#aboutMeButton");
     var contactButton = $("#contactButton");
-    var uniqueHeight = $(window).height()
 
     $("#rayRayWebsite").on("click", function () {
         var productLink = $(this).attr("href", "https://teamjuli0.github.io/SuperDuperAmazingSpectacular/index.html");
