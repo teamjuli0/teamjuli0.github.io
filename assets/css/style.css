@@ -2,34 +2,72 @@
     box-sizing: border-box;
 }
 
-body {
-    background: radial-gradient(
-        rgba(0, 0, 0, 5),
-        rgba(0, 0, 0, .5)),
+p {
+    line-height: 2;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 17px
 }
 
 .uk-card {
     padding-top: 0px;
 }
 
-#websites {
-    margin-top: 0px;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
+.uk-container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-#aboutMe {
-    max-width: 850px;
-    margin: auto;
+.mainSection {
+    font-size: 40px;
+}
+
+.mainSectionFun {
+    font-size: 8px;
+    padding-bottom: 10%;
+    color: #157ec4
+}
+
+.aboutMe {
+    padding-top: 5%;
+    min-height: 100vh;
+    width: 100%;
     text-align: center;
+    background: #dddddd71;
+    color: #505050
+}
+
+.uk-navbar-container {
+    background: white!important;
+    color: #157ec4
+}
+
+#unique {
+    min-height: 100vh!important;
+}
+
+#aboutMeContainer {
+    padding: 0px, 0px, 0px, 0px;
 }
 
 #contact {
+    padding-top: 10%;
     margin: auto;
     text-align: center;
+    background: #ebebeb;
+    min-height: 100vh;
+}
+
+#home {
+    min-height: 100vh;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #message {
     min-height: 100px;
+}
+
+#portfolioContainer {
+    background-color: #f8f8f8;
 }
