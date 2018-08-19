@@ -9,6 +9,10 @@ p {
     font-size: 17px
 }
 
+svg {
+    margin-right: 10px
+}
+
 .uk-card {
     padding-top: 0px;
 }
@@ -42,6 +46,16 @@ p {
     color: #157ec4
 }
 
+.allButtons {
+    text-align: right
+}
+
+.uk-offcanvas-close {
+    position: relative!important
+}
+
+
+
 #unique {
     min-height: 100vh!important;
 }
@@ -51,7 +65,7 @@ p {
 }
 
 #contact {
-    padding-top: 10%;
+    padding-top: 20%;
     margin: auto;
     text-align: center;
     background: #ebebeb;
