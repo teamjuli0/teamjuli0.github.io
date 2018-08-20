@@ -17,9 +17,23 @@ svg {
     padding-top: 0px;
 }
 
+.webImg {
+    border: solid;
+    border-width: 1px;
+}
+
+.uk-slideshow-items {
+    height: 300px!important;
+}
+
 .uk-container {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.absolutelyUnique {
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .mainSection {

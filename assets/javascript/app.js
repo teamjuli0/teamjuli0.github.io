@@ -5,7 +5,7 @@ $(document).ready(function () {
     var contactButton = $(".contactButton");
 
     $(".rayRayWebsite").on("click", function () {
-        var productLink = $(this).attr("href", "https://teamjuli0.github.io/SuperDuperAmazingSpectacular/index.html");
+        var productLink = $(this).attr("href", "https://teamjuli0.github.io/SuperDuperAmazingSpectacular/");
         productLink.attr("target", "_blank");
         window.open(productLink.attr("href"));
     });
@@ -16,8 +16,8 @@ $(document).ready(function () {
         window.open(productLink.attr("href"));
     });
 
-    $("#3rdWebsite").on("click", function () {
-        var productLink = $(this).attr("href", "https://teamjuli0.github.io/SuperDuperAmazingSpectacular/index.html");
+    $(".gifTastic").on("click", function () {
+        var productLink = $(this).attr("href", "https://teamjuli0.github.io/GifTastic/");
         productLink.attr("target", "_blank");
         window.open(productLink.attr("href"));
     });
