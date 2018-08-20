@@ -4,13 +4,13 @@ $(document).ready(function () {
     var aboutMeButton = $(".aboutMeButton");
     var contactButton = $(".contactButton");
 
-    $("#rayRayWebsite").on("click", function () {
+    $(".rayRayWebsite").on("click", function () {
         var productLink = $(this).attr("href", "https://teamjuli0.github.io/SuperDuperAmazingSpectacular/index.html");
         productLink.attr("target", "_blank");
         window.open(productLink.attr("href"));
     });
 
-    $("#triviaGameWebsite").on("click", function () {
+    $(".triviaGameWebsite").on("click", function () {
         var productLink = $(this).attr("href", "https://teamjuli0.github.io/TriviaGame/");
         productLink.attr("target", "_blank");
         window.open(productLink.attr("href"));
