@@ -6,44 +6,11 @@ p {
     line-height: 2;
     margin-right: 15%;
     margin-left: 15%;
-    font-size: 17px
+    font-size: 14px
 }
 
 svg {
     margin-right: 10px
-}
-
-.uk-card {
-    padding-top: 0px;
-}
-
-.webImg {
-    border: solid;
-    border-width: 1px;
-}
-
-.uk-slideshow-items {
-    height: 100%!important;
-}
-
-.uk-container {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.absolutelyUnique {
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-.mainSection {
-    font-size: 40px;
-}
-
-.mainSectionFun {
-    font-size: 8px;
-    padding-bottom: 10%;
-    color: #157ec4
 }
 
 .aboutMe {
@@ -55,24 +22,52 @@ svg {
     color: #505050
 }
 
+.absolutelyUnique {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.allButtons {
+    text-align: right
+}
+.mainSection {
+    font-size: 40px;
+}
+
+.mainSectionFun {
+    font-size: 8px;
+    padding-bottom: 10%;
+    color: #157ec4
+}
+
+.uk-card {
+    padding-top: 0px;
+}
+
+
+
+.uk-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .uk-navbar-container {
     background: white!important;
     color: #157ec4;
     height: 10vh
 }
 
-.allButtons {
-    text-align: right
-}
-
 .uk-offcanvas-close {
     position: relative!important
 }
 
+.uk-slideshow-items {
+    height: 50%!important;
+}
 
-
-#unique {
-    min-height: 100vh!important;
+.webImg {
+    border: solid;
+    border-width: 1px;
 }
 
 #aboutMeContainer {
@@ -83,7 +78,7 @@ svg {
     padding-top: 15vh;
     text-align: center;
     background: #ebebeb;
-    min-height: 100vh;
+    min-height: 90vh;
     padding-bottom: 3vh         
 }
 
@@ -99,4 +94,8 @@ svg {
 
 #portfolioContainer {
     background-color: #f8f8f8;
+}
+
+#unique {
+    min-height: 100vh!important;
 }
