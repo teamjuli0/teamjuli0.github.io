@@ -23,7 +23,7 @@ svg {
 }
 
 .uk-slideshow-items {
-    height: 300px!important;
+    height: 100%!important;
 }
 
 .uk-container {

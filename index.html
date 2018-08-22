@@ -72,54 +72,43 @@
         <br>
 
         <div class="uk-container" id="home">
-            <div class="uk-hidden@m">
-                <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
-                    <div>
 
-                    </div>
+
+            <div class="uk-hidden@m">
+                <hr class="uk-divider-icon">
+                <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
                     <div class="ukwidth-expand@m">
                         <div class="uk-text-large uk-text-bold absolutelyUnique mainSection">YOU ARE ABSOLUTELY UNIQUE</div>
                     </div>
-                    <div>
-
-                    </div>
                 </div>
-                <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
-                    <div>
 
-                    </div>
+                <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
                     <div class="ukwidth-expand@m">
                         <div class="uk-text-small uk-text-bold mainSectionFun">JUST LIKE EVERYONE ELSE</div>
                     </div>
-                    <div>
-
-                    </div>
                 </div>
+
+                <hr class="uk-divider-icon">
+
             </div>
 
             <div class="uk-visible@m">
-                <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
-                    <div>
 
-                    </div>
+                <hr class="uk-divider-icon">
+
+                <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
                     <div class="ukwidth-expand@m">
                         <div class="uk-text-large uk-text-bold mainSection">YOU ARE ABSOLUTELY UNIQUE</div>
                     </div>
-                    <div>
-
-                    </div>
                 </div>
                 <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
-                    <div>
-
-                    </div>
                     <div class="ukwidth-expand@m">
                         <div class="uk-text-small uk-text-bold mainSectionFun">JUST LIKE EVERYONE ELSE</div>
                     </div>
-                    <div>
-
-                    </div>
                 </div>
+
+                <hr class="uk-divider-icon">
+
             </div>
 
 
@@ -166,31 +155,26 @@
         </div>
 
         <div class="aboutMe ">
-            <br>
-            <br>
-            <br>
-            <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider " uk-grid>
-                <div>
 
-                </div>
+            <br>
+
+            <hr class="uk-divider-icon">
+
+            <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
                 <div class="ukwidth-expand@m ">
                     <div class="uk-text-large uk-text-bold mainSection">ABOUT ME</div>
                 </div>
-                <div>
-
-                </div>
             </div>
-            <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider " uk-grid>
-                <div>
 
-                </div>
+            <br>
+
+            <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider " uk-grid>
                 <div class="ukwidth-expand@m ">
                     <div class="uk-text-small uk-text-bold mainSectionFun ">LIKE THERE'S MUCH TO KNOW</div>
                 </div>
-                <div>
-
-                </div>
             </div>
+
+            <hr class="uk-divider-icon">
 
             <br>
 
@@ -222,26 +206,17 @@
 
 
         <div id="contact">
-            <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider " uk-grid>
-                <div>
 
-                </div>
+            <hr class="uk-divider-icon">
+
+            <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider " uk-grid>
                 <div class="ukwidth-expand@m ">
                     <div class="uk-text-large uk-text-bold mainSection ">LOOKING TO HIRE?</div>
                 </div>
-                <div>
-
-                </div>
             </div>
             <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider " uk-grid>
-                <div>
-
-                </div>
                 <div class="ukwidth-expand@m ">
                     <div class="uk-text-small uk-text-bold mainSectionFun ">COMMENTS OR CONCERNS TOO I GUESS</div>
-                </div>
-                <div>
-
                 </div>
             </div>
 
@@ -249,29 +224,36 @@
 
             <div class="uk-card uk-card-small uk-card-body ">
 
-                <form id="form ">
-                    <div class="uk-margin ">
-                        <h3 class="uk-logo ">Name</h3>
-                        <input type="text " class="uk-input uk-form-width-large name " placeholder="John Doe ">
+                <form id="form" action="http://getsimpleform.com/messages?form_api_token=d790a2d1a7df9ecaa57e57a5e9785703" method="post">
+                    <input type='hidden' name='redirect_to' value='https://teamjuli0.github.io' />
+                    <div class="uk-margin">
+                        <h3 class="uk-logo">Name</h3>
+                        <input type="text" id="name" name="name" class="uk-input uk-form-width-large name" placeholder="Your Name">
                     </div>
-                    <div class="uk-margin ">
-                        <h3 class="uk-logo ">Email</h3>
-                        <input type="email " class="uk-input uk-form-width-large email " placeholder="john.doe@email.com ">
+                    <div class="uk-margin">
+                        <h3 class="uk-logo">Your Email</h3>
+                        <input type="text" id="email" name="email" class="uk-input uk-form-width-large email" placeholder="Your Email">
                     </div>
-                    <div class="uk-margin ">
-                        <h3 class="uk-logo ">Message</h3>
-                        <textarea type="text " class="uk-input uk-form-width-large message " rows="5 " id="message "></textarea>
+                    <div class="uk-margin">
+                        <h3 class="uk-logo">Message</h3>
+                        <textarea id="message" name="message" class="uk-input uk-form-width-large message" rows="5 " id="message"></textarea>
                     </div>
+                    <div>
+                        <button type="submit" value="Submit" class="uk-button uk-button-primary submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
             </div>
-            <br>
-            <div>
-                <button class="uk-button uk-button-primary submit ">
-                    Submit
-                </button>
-            </div>
-            <div class="status "></div>
 
+            <br>
+
+            <div class="status"></div>
+
+            <hr class="uk-divider-icon">
         </div>
+
+
     </div>
 
 
