@@ -4,13 +4,9 @@
 
 p {
     line-height: 2;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 10%;
+    margin-left: 10%;
     font-size: 14px
-}
-
-svg {
-    margin-right: 10px
 }
 
 .aboutMe {
@@ -30,6 +26,7 @@ svg {
 .allButtons {
     text-align: right
 }
+
 .mainSection {
     font-size: 40px;
 }
@@ -42,9 +39,9 @@ svg {
 
 .uk-card {
     padding-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 .uk-container {
     padding-left: 0px;
@@ -83,7 +80,7 @@ svg {
 }
 
 #home {
-    min-height: 100vh;
+    min-height: 10vh;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -92,10 +89,14 @@ svg {
     min-height: 100px;
 }
 
-#portfolioContainer {
-    background-color: #f8f8f8;
+#portfolio {
+    min-height: 80vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%;
+    text-align: center;
 }
 
-#unique {
-    min-height: 100vh!important;
+#portfolioContainer {
+    background-color: #f8f8f8;
 }
