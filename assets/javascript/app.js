@@ -4,8 +4,8 @@ $(document).ready(function() {
 
 
   // Redirect to new tab with GitHub links
-  $(".rayRayWebsite").on("click", function() {
-    var productLink = $(this).attr("href", "https://teamjuli0.github.io/SuperDuperAmazingSpectacular/");
+  $(".oneReview").on("click", function() {
+    var productLink = $(this).attr("href", "https://teamjuli0.github.io/oneReview/");
     productLink.attr("target", "_blank");
     window.open(productLink.attr("href"));
   });
