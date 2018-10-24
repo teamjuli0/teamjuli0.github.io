@@ -1,29 +1,33 @@
 $(document).ready(function() {
-
-
-
+  var productLink;
 
   // Redirect to new tab with GitHub links
+  $(".fitHub").on("click", function() {
+    productLink = $(this).attr("href", "https://frozen-eyrie-10750.herokuapp.com/");
+    productLink.attr("target", "_blank");
+    window.open(productLink.attr("href"));
+  });
+
   $(".oneReview").on("click", function() {
-    var productLink = $(this).attr("href", "https://teamjuli0.github.io/oneReview/");
+    productLink = $(this).attr("href", "https://teamjuli0.github.io/oneReview/");
     productLink.attr("target", "_blank");
     window.open(productLink.attr("href"));
   });
 
   $(".triviaGameWebsite").on("click", function() {
-    var productLink = $(this).attr("href", "https://teamjuli0.github.io/TriviaGame/");
+    productLink = $(this).attr("href", "https://teamjuli0.github.io/TriviaGame/");
     productLink.attr("target", "_blank");
     window.open(productLink.attr("href"));
   });
 
   $(".gifTastic").on("click", function() {
-    var productLink = $(this).attr("href", "https://teamjuli0.github.io/GifTastic/");
+    productLink = $(this).attr("href", "https://teamjuli0.github.io/GifTastic/");
     productLink.attr("target", "_blank");
     window.open(productLink.attr("href"));
   });
 
   $(".liriNodeApp").on("click", function() {
-    var productLink = $(this).attr("href", "https://github.com/teamjuli0/liri-node-app");
+    productLink = $(this).attr("href", "https://github.com/teamjuli0/liri-node-app");
     productLink.attr("target", "_blank");
     window.open(productLink.attr("href"));
   });
