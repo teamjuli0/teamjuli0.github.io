@@ -11,7 +11,7 @@ p {
 
 .aboutMe {
   padding-top: 10vh;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   text-align: center;
   background: #dddddd71;
@@ -63,7 +63,7 @@ p {
 }
 
 .uk-slideshow-items {
-  height: 50% !important;
+  height: 100%!important
 }
 
 .webImg {
@@ -79,25 +79,25 @@ p {
   padding-top: 15vh;
   text-align: center;
   background: #ebebeb;
-  min-height: 90vh;
+  height: 100vh;
   padding-bottom: 3vh
 }
 
 #home {
-  min-height: 10vh;
+  height: 10vh;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 #message {
-  min-height: 100px;
+  height: 100px;
 }
 
 #portfolio {
-  min-height: 80vh;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 10%;
+  height: 70vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 10vh;
   text-align: center;
 }
 
