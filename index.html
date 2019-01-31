@@ -29,112 +29,75 @@
   </head>
 
   <body>
-    <!-- Div For Scrolling to the Top -->
-    <div id="unique">
+
+    <!-- Refference  Div For Scrolling to the Top -->
+    <div id="unique"></div>
+
       <!-- Sticky NavBar -->
-      <div uk-sticky="uk-navbar-sticky" id="stickyNavBar">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-          <div class="uk-navbar-left" id="navLeft">
-            <a class="uk-navbar-item uk-logo" href="#"> </a>
-            <span uk-icon="icon: comments; ratio: 1.5"></span>
-            <a class="uk-navbar-item uk-logo" href="#">teamjuli0</a>
-          </div>
-          <div class="uk-navbar-right">
-            <!-- NavBar for medium+ devices -->
-            <ul class="uk-navbar-nav uk-visible@m">
-              <li class="homeButton"><a href="#">Home</a></li>
-              <li class="aboutMeButton"><a href="#">About Me</a></li>
-              <li class="contactButton"><a href="#">Contact</a></li>
-            </ul>
+    <div uk-sticky="uk-navbar-sticky" id="stickyNavBar">
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left" id="navLeft">
+          <a class="uk-navbar-item uk-logo" href="#"> </a>
+          <span uk-icon="icon: comments; ratio: 1.5"></span>
+          <a class="uk-navbar-item uk-logo" href="#">teamjuli0</a>
+        </div>
+        <div class="uk-navbar-right">
 
-            <!-- NavBar for divices smaller than medium -->
-            <ul class="uk-navbar-nav uk-hidden@m">
-              <li>
-                <a href="#"
-                  ><span
-                    class="uk-margin-small-right"
-                    uk-icon="icon: table"
-                  ></span
-                ></a>
-                <div class="uk-navbar-dropdown">
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-nav-header">Here we go again</li>
-                    <li class="uk-nav-divider"></li>
-                    <li class="homeButton"><a href="#">Home</a></li>
-                    <li class="aboutMeButton"><a href="#">About Me</a></li>
-                    <li class="contactButton"><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <br />
-          </div>
-        </nav>
-      </div>
+        <!-- NavBar for medium+ devices -->
+          <ul class="uk-navbar-nav uk-visible@m">
+            <li class="homeButton"><a href="#">Home</a></li>
+            <li class="aboutMeButton"><a href="#">About Me</a></li>
+            <li class="contactButton"><a href="#">Contact</a></li>
+          </ul>
 
-      <br />
+          <!-- NavBar for divices smaller than medium -->
+          <ul class="uk-navbar-nav uk-hidden@m">
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: table"
+                ></span
+              ></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-nav-header">Here we go again</li>
+                  <li class="uk-nav-divider"></li>
+                  <li class="homeButton"><a href="#">Home</a></li>
+                  <li class="aboutMeButton"><a href="#">About Me</a></li>
+                  <li class="contactButton"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
 
       <!-- Home Page / Portfolio -->
-      <div id="home">
-        <!-- Portfolio page with font for small screens -->
-        <div class="uk-hidden@m">
-          <div
-            class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-            uk-grid
-          >
-            <div class="ukwidth-expand@m">
-              <div
-                class="uk-text-large uk-text-bold absolutelyUnique mainSection"
-              >
-                YOU ARE ABSOLUTELY UNIQUE
-              </div>
-            </div>
-          </div>
-          <div
-            class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-            uk-grid
-          >
-            <div class="ukwidth-expand@m">
-              <div class="uk-text-small uk-text-bold mainSectionFun">
-                JUST LIKE EVERYONE ELSE
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio page with font for large screens -->
-        <div class="uk-visible@m">
-          <hr class="uk-divider-icon" />
-          <div
-            class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-            uk-grid
-          >
-            <div class="ukwidth-expand@m">
-              <div class="uk-text-large uk-text-bold mainSection">
-                YOU ARE ABSOLUTELY UNIQUE
-              </div>
-            </div>
-          </div>
-          <div
-            class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-            uk-grid
-          >
-            <div class="ukwidth-expand@m">
-              <div class="uk-text-small uk-text-bold mainSectionFun">
-                JUST LIKE EVERYONE ELSE
-              </div>
-              <hr class="uk-divider-icon" />
-            </div>
+    <div id="home">
+      <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
+        <div class="ukwidth-expand@m">
+          <div class="uk-text-large uk-text-bold absolutelyUnique mainSection">
+            YOU ARE ABSOLUTELY UNIQUE
           </div>
         </div>
       </div>
-      <hr class="uk-divider-icon uk-hidden@m" />
+      <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
+        <div class="ukwidth-expand@m">
+          <div class="uk-text-small uk-text-bold mainSectionFun">
+           JUST LIKE EVERYONE ELSE
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+                <!-- Portfolio Images -->
       <div id="portfolio">
-        <br />
-        <br />
         <div>
-          <!-- Portfolio Images for Small Screens -->
           <div
             class="uk-position-relative uk-visible-toggle uk-light"
             uk-slideshow="animation: scale"
@@ -194,9 +157,6 @@
 
       <!-- About Me Page / Class for Scrolling to About Me Page-->
       <div class="aboutMe">
-        <br />
-
-        <hr class="uk-divider-icon" />
         <div
           class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
           uk-grid
@@ -205,9 +165,6 @@
             <div class="uk-text-large uk-text-bold mainSection">ABOUT ME</div>
           </div>
         </div>
-
-        <br />
-
         <div
           class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
           uk-grid
@@ -218,9 +175,8 @@
             </div>
           </div>
         </div>
-        <hr class="uk-divider-icon" />
 
-        <br />
+
 
         <div id="aboutMe">
           <div class="uk-card uk-card-small uk-card-body">
@@ -270,13 +226,12 @@
 
             <p>A job doesn't push people to new limits. Their Passion Does.</p>
           </div>
-          <br />
+
         </div>
       </div>
 
       <!-- Contact Page -->
       <div id="contact">
-        <hr class="uk-divider-icon" />
         <div
           class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
           uk-grid
@@ -304,7 +259,7 @@
           </div>
         </div>
 
-        <br />
+
 
         <!-- Form to Email Information to Me -->
         <div class="uk-card uk-card-small uk-card-body">
@@ -348,7 +303,7 @@
                 id="message"
               ></textarea>
             </div>
-            <br />
+
             <div>
               <button
                 type="submit"
@@ -361,10 +316,9 @@
           </form>
 
           <div class="status"></div>
-          <hr class="uk-divider-icon" />
         </div>
 
-        <br />
+
       </div>
     </div>
   </body>

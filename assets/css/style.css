@@ -6,7 +6,7 @@ p {
   line-height: 2;
   margin-right: 10%;
   margin-left: 10%;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .aboutMe {
@@ -15,7 +15,7 @@ p {
   width: 100%;
   text-align: center;
   background: #dddddd71;
-  color: #505050
+  color: #505050;
 }
 
 .absolutelyUnique {
@@ -24,7 +24,7 @@ p {
 }
 
 .allButtons {
-  text-align: right
+  text-align: right;
 }
 
 .mainSection {
@@ -34,11 +34,11 @@ p {
 .mainSectionFun {
   font-size: 8px;
   padding-bottom: 10%;
-  color: #157ec4
+  color: #157ec4;
 }
 
 .mainSectionFunMedium {
-  font-size: 30px
+  font-size: 30px;
 }
 
 .uk-card {
@@ -55,19 +55,19 @@ p {
 .uk-navbar-container {
   background: white !important;
   color: #157ec4;
-  height: 10vh
+  height: 10vh;
 }
 
 .uk-offcanvas-close {
-  position: relative !important
+  position: relative !important;
 }
 
 /* .uk-slideshow-lg {
-  
+
 } */
 
 .uk-slideshow-items {
-  height: 100%!important
+  height: 100% !important;
 }
 
 .webImg {
@@ -88,6 +88,7 @@ p {
 }
 
 #home {
+  background-color: #f0f0f0 !important;
   height: 10vh;
   padding-left: 40px;
   padding-right: 40px;
@@ -103,8 +104,13 @@ p {
   padding-right: 10vw;
   margin-top: 10vh;
   text-align: center;
+  background-color: #f0f0f0 !important;
 }
 
 #portfolioContainer {
   background-color: #f8f8f8;
+}
+
+#stickyNavBar {
+  border-bottom: 0.5vh solid #f0f0f0;
 }
