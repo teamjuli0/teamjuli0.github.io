@@ -3,6 +3,15 @@ import { Navbar, Slider } from '../components/'
 import { AboutMe, Contact } from './'
 
 class Home extends React.Component {
+  scrollToAboutMe = () =>
+    window.scrollTo({
+      left: 0,
+      top: window.innerHeight * 3,
+      behavior: 'smooth'
+    })
+  scrollToContact = () =>
+    window.scrollTo({ left: 0, top: window.innerHeight, behavior: 'smooth' })
+
   render() {
     return (
       <>
