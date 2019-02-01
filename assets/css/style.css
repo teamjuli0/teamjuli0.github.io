@@ -88,7 +88,6 @@ p {
 }
 
 #home {
-  background-color: #f0f0f0 !important;
   height: 10vh;
   padding-left: 40px;
   padding-right: 40px;
@@ -104,13 +103,4 @@ p {
   padding-right: 10vw;
   margin-top: 10vh;
   text-align: center;
-  background-color: #f0f0f0 !important;
-}
-
-#portfolioContainer {
-  background-color: #f8f8f8;
-}
-
-#stickyNavBar {
-  border-bottom: 0.5vh solid #f0f0f0;
 }
