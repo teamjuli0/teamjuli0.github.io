@@ -3,14 +3,14 @@ import React from 'react'
 const Navbar = () => (
   <div>
     <nav
-      class='navbar navbar-expand-lg navbar-light fixed-top'
+      className='navbar navbar-expand-lg navbar-light fixed-top'
       style={{ height: '10vh', backgroundColor: 'white ' }}
     >
-      <a class='navbar-brand' href='#'>
+      <a className='navbar-brand' href='#'>
         teamjuli0
       </a>
       <button
-        class='navbar-toggler'
+        className='navbar-toggler'
         type='button'
         data-toggle='collapse'
         data-target='#navbarSupportedContent'
@@ -18,23 +18,23 @@ const Navbar = () => (
         aria-expanded='false'
         aria-label='Toggle navigation'
       >
-        <span class='navbar-toggler-icon' />
+        <span className='navbar-toggler-icon' />
       </button>
 
-      <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-        <ul class='navbar-nav mr-auto'>
-          <li class='nav-item active'>
-            <a class='nav-link' href='#'>
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <ul className='navbar-nav mr-auto'>
+          <li className='nav-item active'>
+            <a className='nav-link' href='#'>
               Home
             </a>
           </li>
-          <li class='nav-item'>
-            <a class='nav-link' href='#'>
+          <li className='nav-item'>
+            <a className='nav-link' href='#'>
               About Me
             </a>
           </li>
-          <li class='nav-item'>
-            <a class='nav-link' href='#'>
+          <li className='nav-item'>
+            <a className='nav-link' href='#'>
               Contact
             </a>
           </li>

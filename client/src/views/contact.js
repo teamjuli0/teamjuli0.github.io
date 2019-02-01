@@ -5,15 +5,35 @@ class Contact extends React.Component {
     return (
       <div
         style={{
+          width: '100vw',
           paddingTop: '15vh',
           height: '100vh',
           backgroundColor: '#ebebeb'
         }}
       >
-        <p>LOOKING TO HIRE?</p>
+        <p
+          style={{
+            fontFamily: 'Poppins, sans-serif',
+            fontSize: '6vw',
+            color: '#666'
+          }}
+        >
+          LOOKING TO HIRE?
+        </p>
         <a>
-          <p>LinkedIn</p>
-
+          <p
+            style={{
+              fontSize: '4vw',
+              marginBottom: '1vh',
+              fontWeight: 100,
+              color: '#157ec4',
+              marginTop: '2vh'
+            }}
+          >
+            LinkedIn
+          </p>
+        </a>
+        <div style={{ width: '75vw', margin: 'auto' }}>
           <form
             id='form'
             action='http://getsimpleform.com/messages?form_api_token=f32af7d1b6983a428f4b3ca209662c46'
@@ -24,50 +44,47 @@ class Contact extends React.Component {
               name='redirect_to'
               value='https://teamjuli0.github.io'
             />
-            <div class='uk-margin'>
-              <h3 class='uk-logo'>Name</h3>
+            <div class='form-group'>
+              <label for='name'>Name</label>
               <input
                 type='text'
+                class='form-control'
                 id='name'
-                name='name'
-                class='uk-input uk-form-width-large name'
-                placeholder='Your Name'
+                placeholder='Your Name Here'
               />
             </div>
-            <div class='uk-margin'>
-              <h3 class='uk-logo'>Email</h3>
+            <div class='form-group'>
+              <label for='email'>Email</label>
               <input
                 type='text'
+                class='form-control'
                 id='email'
-                name='email'
-                class='uk-input uk-form-width-large email'
-                placeholder='Your Email'
+                placeholder='Your Email Here'
               />
             </div>
-            <div class='uk-margin'>
-              <h3 class='uk-logo'>Message</h3>
+            <div class='form-group'>
+              <label for='message'>Message</label>
               <textarea
+                type='text'
+                class='form-control'
                 id='message'
                 name='message'
-                class='uk-input uk-form-width-large message'
-                rows='5 '
-                id='message'
+                rows='5'
+                placeholder='Comments or questions go here!'
               />
             </div>
-
             <div>
               <button
                 type='submit'
                 value='Submit'
-                class='uk-button uk-button-primary submit'
+                class='btn btn-primary submit'
               >
                 Submit
               </button>
             </div>
           </form>
-
-          <div class='status' />
-        </a>
+        </div>
+        <div class='status' />
       </div>
     )
   }

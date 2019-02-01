@@ -20,44 +20,54 @@ class SimpleSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <img
-            src={FithubIcon}
-            alt=''
-            class='webImg fitHub'
-            style={{ margin: 'auto', width: '35vw' }}
-          />
+          <a href='https://frozen-eyrie-10750.herokuapp.com/'>
+            <img
+              src={FithubIcon}
+              alt=''
+              class='webImg fitHub'
+              style={{ margin: 'auto', width: '35vw' }}
+            />
+          </a>
         </div>
         <div>
-          <img
-            src={OneReviewIcon}
-            alt=''
-            class='webImg oneReview'
-            style={{ margin: 'auto', width: '35vw' }}
-          />
+          <a href='https://teamjuli0.github.io/oneReview/'>
+            <img
+              src={OneReviewIcon}
+              alt=''
+              class='webImg oneReview'
+              style={{ margin: 'auto', width: '35vw' }}
+            />
+          </a>
         </div>
         <div>
-          <img
-            src={GifTasticIcon}
-            alt=''
-            class='webImg gifTastic'
-            style={{ margin: 'auto', width: '35vw' }}
-          />
+          <a href='https://teamjuli0.github.io/GifTastic/'>
+            <img
+              src={GifTasticIcon}
+              alt=''
+              class='webImg gifTastic'
+              style={{ margin: 'auto', width: '35vw' }}
+            />
+          </a>
         </div>
         <div>
-          <img
-            src={TriviaGameIcon}
-            alt=''
-            class='webImg triviaGameWebsite'
-            style={{ margin: 'auto', width: '35vw' }}
-          />
+          <a href='https://teamjuli0.github.io/TriviaGame/'>
+            <img
+              src={TriviaGameIcon}
+              alt=''
+              class='webImg triviaGameWebsite'
+              style={{ margin: 'auto', width: '35vw' }}
+            />
+          </a>
         </div>
         <div>
-          <img
-            src={LiriIcon}
-            alt=''
-            class='webImg liriNodeApp'
-            style={{ margin: 'auto', width: '35vw' }}
-          />
+          <a href='https://github.com/teamjuli0/liri-node-app'>
+            <img
+              src={LiriIcon}
+              alt=''
+              class='webImg liriNodeApp'
+              style={{ margin: 'auto', width: '35vw' }}
+            />
+          </a>
         </div>
       </Slider>
     )

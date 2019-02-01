@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Slider } from '../components/'
+import { AboutMe, Contact } from './'
 
 class Home extends React.Component {
   render() {
@@ -36,6 +37,8 @@ class Home extends React.Component {
             <Slider />
           </div>
         </div>
+        <AboutMe ref={input => (this.aboutMe = input)} />
+        <Contact ref={input => (this.contact = input)} />
       </>
     )
   }
