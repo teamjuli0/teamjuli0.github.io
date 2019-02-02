@@ -3,19 +3,31 @@ import { Navbar, Slider } from '../components/'
 import { AboutMe, Contact } from './'
 
 class Home extends React.Component {
-  scrollToAboutMe = () =>
+  scrollContact = () =>
     window.scrollTo({
       left: 0,
       top: window.innerHeight * 3,
       behavior: 'smooth'
     })
-  scrollToContact = () =>
+
+  scrollHome = () =>
+    window.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: 'smooth'
+    })
+
+  scrollAboutMe = () =>
     window.scrollTo({ left: 0, top: window.innerHeight, behavior: 'smooth' })
 
   render() {
     return (
       <>
-        <Navbar />
+        <Navbar
+          scrollAboutMe={this.scrollAboutMe}
+          scrollContact={this.scrollContact}
+          scrollHome={this.scrollHome}
+        />
         <div
           className='container-fluid'
           style={{
@@ -46,8 +58,8 @@ class Home extends React.Component {
             <Slider />
           </div>
         </div>
-        <AboutMe ref={input => (this.aboutMe = input)} />
-        <Contact ref={input => (this.contact = input)} />
+        <AboutMe />
+        <Contact />
       </>
     )
   }

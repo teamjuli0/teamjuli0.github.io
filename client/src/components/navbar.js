@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Navbar = () => (
+const Navbar = props => (
   <div>
     <nav
       className='navbar navbar-expand-lg navbar-light fixed-top'
       style={{ height: '10vh', backgroundColor: 'white ' }}
     >
-      <a className='navbar-brand' href='#'>
+      <span className='navbar-brand' onClick={props.scrollHome}>
         teamjuli0
-      </a>
+      </span>
       <button
         className='navbar-toggler'
         type='button'
@@ -23,20 +23,14 @@ const Navbar = () => (
 
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <ul className='navbar-nav mr-auto'>
-          <li className='nav-item active'>
-            <a className='nav-link' href='#'>
-              Home
-            </a>
+          <li className='nav-item active' onClick={props.scrollHome}>
+            <span className='nav-link'>Home</span>
           </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              About Me
-            </a>
+          <li className='nav-item' onClick={props.scrollAboutMe}>
+            <span className='nav-link'>About Me</span>
           </li>
-          <li className='nav-item'>
-            <a className='nav-link' href='#'>
-              Contact
-            </a>
+          <li className='nav-item' onClick={props.scrollContact}>
+            <span className='nav-link'>Contact</span>
           </li>
         </ul>
       </div>
