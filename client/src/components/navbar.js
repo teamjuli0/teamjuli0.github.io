@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from '../images/group.png'
 
 const Navbar = props => (
   <div>
@@ -6,7 +7,12 @@ const Navbar = props => (
       className='navbar navbar-expand-lg navbar-light fixed-top'
       style={{ height: '10vh', backgroundColor: 'white ' }}
     >
-      <span className='navbar-brand' onClick={props.scrollHome}>
+      <img src={Icon} style={{ width: '3vw', marginRight: '1vw' }} />
+      <span
+        className='navbar-brand'
+        onClick={props.scrollHome}
+        style={{ cursor: 'default' }}
+      >
         teamjuli0
       </span>
       <button
@@ -23,13 +29,25 @@ const Navbar = props => (
 
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <ul className='navbar-nav mr-auto'>
-          <li className='nav-item active' onClick={props.scrollHome}>
+          <li
+            className='nav-item active'
+            onClick={props.scrollHome}
+            style={{ cursor: 'default' }}
+          >
             <span className='nav-link'>Home</span>
           </li>
-          <li className='nav-item' onClick={props.scrollAboutMe}>
+          <li
+            className='nav-item'
+            onClick={props.scrollAboutMe}
+            style={{ cursor: 'default' }}
+          >
             <span className='nav-link'>About Me</span>
           </li>
-          <li className='nav-item' onClick={props.scrollContact}>
+          <li
+            className='nav-item'
+            onClick={props.scrollContact}
+            style={{ cursor: 'default' }}
+          >
             <span className='nav-link'>Contact</span>
           </li>
         </ul>

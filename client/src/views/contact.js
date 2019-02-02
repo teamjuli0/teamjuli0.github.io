@@ -49,6 +49,7 @@ class Contact extends React.Component {
               <input
                 type='text'
                 class='form-control'
+                name='name'
                 id='name'
                 placeholder='Your Name Here'
               />
@@ -59,6 +60,7 @@ class Contact extends React.Component {
                 type='text'
                 class='form-control'
                 id='email'
+                name='email'
                 placeholder='Your Email Here'
               />
             </div>
