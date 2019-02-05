@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 2;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 14px;
+}
+
+.aboutMe {
+  padding-top: 10vh;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: #dddddd71;
+  color: #505050;
+}
+
+.absolutelyUnique {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.allButtons {
+  text-align: right;
+}
+
+.mainSection {
+  font-size: 40px;
+}
+
+.mainSectionFun {
+  font-size: 8px;
+  padding-bottom: 10%;
+  color: #157ec4;
+}
+
+.mainSectionFunMedium {
+  font-size: 30px;
+}
+
+.uk-card {
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uk-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.uk-navbar-container {
+  background: white !important;
+  color: #157ec4;
+  height: 10vh;
+}
+
+.uk-offcanvas-close {
+  position: relative !important;
+}
+
+/* .uk-slideshow-lg {
+
+} */
+
+.uk-slideshow-items {
+  height: 100% !important;
+}
+
+.webImg {
+  border: solid;
+  border-width: 1px;
+}
+
+#aboutMeContainer {
+  padding: 0px, 0px, 0px, 0px;
+}
+
+#contact {
+  padding-top: 10vh;
+  text-align: center;
+  background: #ebebeb;
+  height: 100vh;
+  /* padding-bottom: 3vh */
+}
+
+#home {
+  height: 10vh;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#message {
+  height: 100px;
+}
+
+#portfolio {
+  height: 70vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 10vh;
+  text-align: center;
+}

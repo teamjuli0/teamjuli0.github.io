@@ -8,20 +8,33 @@
     <!-- CSS Reset -->
     <link rel="stylesheet" href="assets/css/reset.css" />
 
-    <!-- UIkit CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
     />
 
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:700"
+      rel="stylesheet"
+    />
 
     <!-- JS and CSS-->
     <script src="assets/javascript/app.js"></script>
@@ -29,295 +42,85 @@
   </head>
 
   <body>
-
-    <!-- Refference  Div For Scrolling to the Top -->
-    <div id="unique"></div>
-
-      <!-- Sticky NavBar -->
-    <div uk-sticky="uk-navbar-sticky" id="stickyNavBar">
-      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-        <div class="uk-navbar-left" id="navLeft">
-          <a class="uk-navbar-item uk-logo" href="#"> </a>
-          <span uk-icon="icon: comments; ratio: 1.5"></span>
-          <a class="uk-navbar-item uk-logo" href="#">teamjuli0</a>
-        </div>
-        <div class="uk-navbar-right">
-
-        <!-- NavBar for medium+ devices -->
-          <ul class="uk-navbar-nav uk-visible@m">
-            <li class="homeButton"><a href="#">Home</a></li>
-            <li class="aboutMeButton"><a href="#">About Me</a></li>
-            <li class="contactButton"><a href="#">Contact</a></li>
-          </ul>
-
-          <!-- NavBar for divices smaller than medium -->
-          <ul class="uk-navbar-nav uk-hidden@m">
-            <li>
-              <a href="#"
-                ><span
-                  class="uk-margin-small-right"
-                  uk-icon="icon: table"
-                ></span
-              ></a>
-              <div class="uk-navbar-dropdown">
-                <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li class="uk-nav-header">Here we go again</li>
-                  <li class="uk-nav-divider"></li>
-                  <li class="homeButton"><a href="#">Home</a></li>
-                  <li class="aboutMeButton"><a href="#">About Me</a></li>
-                  <li class="contactButton"><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="min-height: 10vh!important"
+    >
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/portfolioLogo.png"
+            width="30vw"
+            height="30vw"
+            class="d-inline-block align-top logo"
+            alt=""
+          />
+          <span>teamjuli0</span>
+        </a>
       </nav>
-    </div>
-
-
-
-      <!-- Home Page / Portfolio -->
-    <div id="home">
-      <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
-        <div class="ukwidth-expand@m">
-          <div class="uk-text-large uk-text-bold absolutelyUnique mainSection">
-            YOU ARE ABSOLUTELY UNIQUE
-          </div>
-        </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get In Touch</a>
+          </li>
+        </ul>
       </div>
-      <div class="uk-grid uk-flex-center uk-text-center uk-grid-divider" uk-grid>
-        <div class="ukwidth-expand@m">
-          <div class="uk-text-small uk-text-bold mainSectionFun">
-           JUST LIKE EVERYONE ELSE
-          </div>
-        </div>
-      </div>
-    </div>
+    </nav>
 
-
-                <!-- Portfolio Images -->
-      <div id="portfolio">
-        <div>
-          <div
-            class="uk-position-relative uk-visible-toggle uk-light"
-            uk-slideshow="animation: scale"
+    <div class="container-fluid">
+      <div
+        class="row"
+        id="aboutMeIntro"
+        style="min-height: 15vh; vertical-align:middle; text-align:center; max-width: 90vw; margin: auto"
+      >
+        <div class="col-sm">
+          <p
+            style="font-size: 30px; margin: auto; margin-top: 10vw; overflow-wrap: break-word"
           >
-            <ul class="uk-slideshow-items">
-              <li class="uk-card uk-card-small uk-card-body">
-                <img
-                  src="assets/images/fitHub.png"
-                  alt=""
-                  class="webImg fitHub"
-                />
-              </li>
-              <li class="uk-card uk-card-small uk-card-body">
-                <img
-                  src="assets/images/oneReview.png"
-                  alt=""
-                  class="webImg oneReview"
-                />
-              </li>
-              <li class="uk-card uk-card-small uk-card-body">
-                <img
-                  src="assets/images/gifTastic.png "
-                  alt=""
-                  class="webImg gifTastic"
-                />
-              </li>
-              <li class=" uk-card uk-card-small uk-card-body">
-                <img
-                  src="assets/images/triviaGame.png"
-                  alt=""
-                  class="webImg triviaGameWebsite"
-                />
-              </li>
-              <li class=" uk-card uk-card-small uk-card-body">
-                <img
-                  src="assets/images/liri.png"
-                  alt=""
-                  class="webImg liriNodeApp"
-                />
-              </li>
-            </ul>
-            <a
-              class="uk-position-center-left uk-position-small uk-hidden-hover"
-              href="#"
-              uk-slidenav-previous
-              uk-slideshow-item="previous"
-            ></a>
-            <a
-              class="uk-position-center-right uk-position-small uk-hidden-hover"
-              href="#"
-              uk-slidenav-next
-              uk-slideshow-item="next"
-            ></a>
-          </div>
+            Hello World! My name is Julio. I am a fullstack MERN Developer
+            located in Los Angeles, CA.
+          </p>
         </div>
       </div>
-
-      <!-- About Me Page / Class for Scrolling to About Me Page-->
-      <div class="aboutMe">
-        <div
-          class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-          uk-grid
-        >
-          <div class="ukwidth-expand@m">
-            <div class="uk-text-large uk-text-bold mainSection">ABOUT ME</div>
-          </div>
-        </div>
-        <div
-          class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-          uk-grid
-        >
-          <div class="ukwidth-expand@m">
-            <div class="uk-text-small uk-text-bold mainSectionFun">
-              LIKE THERE'S MUCH TO KNOW
-            </div>
-          </div>
-        </div>
-
-
-
-        <div id="aboutMe">
-          <div class="uk-card uk-card-small uk-card-body">
-            <p>
-              Welcome to my portfolio! My name is Julio Valdez (otherwise known
-              as Lilo) and I am 23 years young with a beautiful wife and son. I
-              grew up in El Monte, CA with mom and 3 brothers as well as
-              spending lots of time with my dad in Boyle Heights before settling
-              in the DownTown Los Angeles area. Unlike most kids my age, I spent
-              most of my highschool years learning about smartphones and tablets
-              and discovering the versatility found in the Google/Android
-              ecosystem as well as digging through root files of an old iphone
-              5s to accomplish a high score on flappy bird that none of my
-              friends or family could beat. My days also consisted heavily on
-              hours of playing Call of Duty: Modern Warfare 2. And as any
-              honest, hardcore fan of the franchise would do, I started looking
-              into different ways to mod my profile. After finding a mod menu
-              which I really enjoyed using, I attempted to modify it in order to
-              create my own version. This was my first real time actually coding
-              something and learning a new programming language without even
-              realizing it. Little did I know this would turn into a passion
-              that would be hard to let go of, so much so that I would quit one
-              of my jobs and put everything on the line just for an opportunity
-              at doing what I learned to love and loved to learn.
-            </p>
-            <p>
-              Some people learn coding for the money. Not me. It's been very
-              important for me to realize that passion is what should be
-              motivating me do what I do for a living. I've gone from management
-              to self-employed to working at a bank and even tried being a
-              stay-at-home dad but every time I thought to myself "This is it,
-              this is where I want to be" I failed to feel satisfaction and
-              fulfilment. That is until now! I would be lying if I said that the
-              money did not play a role in my excitement for this new career
-              path I am embarking in but I would also be underselling myself if
-              I didn't let you know that it's not only about the money or didn't
-              tell you about the countless nights spent in front of a computer
-              screen, typing without realizing I only had a couple of hours left
-              until I had to wake up to go to work in the morning. I want to go
-              from getting in trouble for coding on a piece of paper because I'm
-              at work to actually contributing with someone who makes an impact
-              in the world around us while doing what I love to do. All I'm
-              looking for is an opportunity to grow as a person and
-              professionally while doing what I love to do. Just to be clear,
-              what I love to do is code.
-            </p>
-
-            <p>A job doesn't push people to new limits. Their Passion Does.</p>
-          </div>
-
+      <div
+        class="row"
+        style="height: 45vh; min-width: 40vh; vertical-align:middle; text-align:center;"
+      >
+        <div class="col-sm" style="text-align: center">
+          <img
+            src="./assets/images/smileBitmoji.png"
+            alt=""
+            style=" width: 40vh; height: 40vh"
+          />
         </div>
       </div>
-
-      <!-- Contact Page -->
-      <div id="contact">
-        <div
-          class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-          uk-grid
-        >
-          <div class="ukwidth-expand@m">
-            <div class="uk-text-large uk-text-bold mainSection">
-              LOOKING TO HIRE?
-            </div>
-          </div>
+      <div class="row widthAdjustRow">
+        <div class="col-sm">
+          <h5 style="font-size: 16px">About Me:</h5>
+          <p style="line-height: 35px; padding-top: 35px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugit.
+            Quasi nostrum excepturi fugiat eius obcaecati, illo, quas ullam
+            eaque architecto, accusantium rerum alias maiores adipisci aliquid
+            ab cupiditate nulla?
+          </p>
         </div>
-        <div
-          class="uk-grid uk-flex-center uk-text-center uk-grid-divider"
-          uk-grid
-        >
-          <!-- <div class="ukwidth-expand@m">
-          <div class="uk-text-small uk-text-bold mainSectionFun">COMMENTS OR CONCERNS TOO I GUESS</div>
-        </div> -->
-
-          <div class="ukwidth-expand@m">
-            <a
-              class="uk-text-small uk-text-bold mainSectionFun mainSectionFunMedium"
-              href="https://linkedin.com/in/teamjuli0"
-              >LinkedIn</a
-            >
-          </div>
-        </div>
-
-
-
-        <!-- Form to Email Information to Me -->
-        <div class="uk-card uk-card-small uk-card-body">
-          <form
-            id="form"
-            action="http://getsimpleform.com/messages?form_api_token=f32af7d1b6983a428f4b3ca209662c46"
-            method="post"
-          >
-            <input
-              type="hidden"
-              name="redirect_to"
-              value="https://teamjuli0.github.io"
-            />
-            <div class="uk-margin">
-              <h3 class="uk-logo">Name</h3>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="uk-input uk-form-width-large name"
-                placeholder="Your Name"
-              />
-            </div>
-            <div class="uk-margin">
-              <h3 class="uk-logo">Email</h3>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                class="uk-input uk-form-width-large email"
-                placeholder="Your Email"
-              />
-            </div>
-            <div class="uk-margin">
-              <h3 class="uk-logo">Message</h3>
-              <textarea
-                id="message"
-                name="message"
-                class="uk-input uk-form-width-large message"
-                rows="5"
-              ></textarea>
-            </div>
-
-            <div>
-              <button
-                type="submit"
-                value="Submit"
-                class="uk-button uk-button-primary submit"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-
-          <div class="status"></div>
-        </div>
-
-
       </div>
     </div>
   </body>
