@@ -32,30 +32,35 @@
     ></script>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:700"
+      href="https://fonts.googleapis.com/css?family=Merriweather"
       rel="stylesheet"
     />
 
     <!-- JS and CSS-->
     <script src="assets/javascript/app.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./assets/javascript/app.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
-      style="min-height: 10vh!important"
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      id="nav"
     >
       <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
+          <span>teamjuli</span>
           <img
             src="./assets/images/portfolioLogo.png"
-            width="30vw"
-            height="30vw"
+            width="25vw"
+            height="25vw"
             class="d-inline-block align-top logo"
             alt=""
           />
-          <span>teamjuli0</span>
         </a>
       </nav>
       <button
@@ -71,7 +76,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
@@ -84,42 +89,40 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div
-        class="row"
-        id="aboutMeIntro"
-        style="min-height: 15vh; vertical-align:middle; text-align:center; max-width: 90vw; margin: auto"
-      >
-        <div class="col-sm">
-          <p
-            style="font-size: 30px; margin: auto; margin-top: 10vw; overflow-wrap: break-word"
-          >
-            Hello World! My name is Julio. I am a fullstack MERN Developer
-            located in Los Angeles, CA.
-          </p>
+    <div
+      class="row widthAdjustRow"
+      data-aos="slide-up"
+      data-aos-duration="1300"
+    >
+      <div class="container-fluid" style="padding: 0; margin-top: 5vh">
+        <div class="row titleHeaderRow">
+          <div class="col-sm">
+            <div class="borderTop"></div>
+            <p class="titleHeader">
+              Hello World! My name is Julio and I am a fullstack MERN Developer
+              located in Los Angeles, CA.
+            </p>
+          </div>
         </div>
-      </div>
-      <div
-        class="row"
-        style="height: 45vh; min-width: 40vh; vertical-align:middle; text-align:center;"
-      >
-        <div class="col-sm" style="text-align: center">
-          <img
-            src="./assets/images/smileBitmoji.png"
-            alt=""
-            style=" width: 40vh; height: 40vh"
-          />
+        <div class="rowBitmoji">
+          <div class="col-sm">
+            <img
+              src="./assets/images/smileBitmoji.png"
+              alt=""
+              style=" width: 40vh; height: 40vh"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row widthAdjustRow">
         <div class="col-sm">
-          <h5 style="font-size: 16px">About Me:</h5>
-          <p style="line-height: 35px; padding-top: 35px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugit.
-            Quasi nostrum excepturi fugiat eius obcaecati, illo, quas ullam
-            eaque architecto, accusantium rerum alias maiores adipisci aliquid
-            ab cupiditate nulla?
+          <h5 class="smallTitle">About Me:</h5>
+          <p class="smallDesc">
+            If I had to use only one word to describe myself, it would without a
+            doubt be "Simple". I strive to build simple, yet elegant web apps
+            with functionality and value at the core. The only time I'm not
+            clicking away at a keyboard is when I'm kicking a ball with my
+            beautiful son.
           </p>
+          <div class="borderBottom"></div>
         </div>
       </div>
     </div>
