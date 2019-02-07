@@ -16,8 +16,8 @@
     />
 
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
     <script
@@ -38,9 +38,6 @@
 
     <!-- JS and CSS-->
     <script src="assets/javascript/app.js"></script>
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./assets/javascript/app.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -76,43 +73,44 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item home active">
+            <a class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+          <li class="nav-item projects">
+            <a class="nav-link">Projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Get In Touch</a>
+          <li class="nav-item contact">
+            <a class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div
-      class="row widthAdjustRow"
+      class="container-fluid widthAdjust"
+      style="padding: 0; margin-top: 11vh"
       data-aos="slide-up"
       data-aos-duration="1300"
     >
-      <div class="container-fluid" style="padding: 0; margin-top: 5vh">
-        <div class="row titleHeaderRow">
-          <div class="col-sm">
-            <div class="borderTop"></div>
-            <p class="titleHeader">
-              Hello World! My name is Julio and I am a fullstack MERN Developer
-              located in Los Angeles, CA.
-            </p>
-          </div>
+      <div class="row titleHeaderRow">
+        <div class="col-sm">
+          <div class="borderLg"></div>
+          <p class="titleHeader">
+            Hello World! My name is Julio and I am a Fullstack Web Developer
+            located in Los Angeles, CA.
+          </p>
         </div>
-        <div class="rowBitmoji">
-          <div class="col-sm">
-            <img
-              src="./assets/images/smileBitmoji.png"
-              alt=""
-              style=" width: 40vh; height: 40vh"
-            />
-          </div>
+      </div>
+      <div class="rowBitmoji">
+        <div class="col-sm">
+          <img
+            src="./assets/images/smileBitmoji.png"
+            alt=""
+            style=" width: 40vh; height: 40vh"
+          />
         </div>
+      </div>
+      <div class="row">
         <div class="col-sm">
           <h5 class="smallTitle">About Me:</h5>
           <p class="smallDesc">
@@ -126,5 +124,8 @@
         </div>
       </div>
     </div>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

@@ -18,19 +18,26 @@
 
 body {
   font-family: 'Merriweather', serif;
-  border-left: 1vh solid gray;
-  border-right: 1vh solid gray;
-  border-bottom: 1vh solid gray;
+  border: 1vh solid gray;
   display: block;
+  background: #eeeee7;
 }
 
-.widthAdjustRow {
+.portfolio {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px gray;
+  -moz-box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px gray;
+}
+
+.widthAdjust {
   max-width: 80vw;
   margin: auto;
+  padding: 0;
 }
 
 .navbar {
-  background-color: white !important;
+  background-color: #eeeee7 !important;
   font-size: 13px !important;
   font-weight: 900;
 }
@@ -62,17 +69,29 @@ body {
   font-size: 15px;
 }
 
-.borderTop {
+.smallDescPortfolio {
+  margin-right: 10vw;
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+  text-align: right;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.borderLg {
   margin: auto;
   width: 100%;
-  margin-top: 6vh;
   border-bottom: 1px solid gray;
 }
 
 .borderBottom {
   margin: auto;
-  width: 60%;
+  width: 80%;
   margin-bottom: 5vh;
+  margin-top: 3vh;
   border-bottom: 1px solid gray;
 }
 
@@ -89,6 +108,14 @@ body {
   font-weight: 900;
 }
 
+.titleHeaderPortfolio {
+  font-size: 23px;
+  margin: auto;
+  margin-top: 2vw;
+  overflow-wrap: break-word;
+  font-weight: 900;
+}
+
 .titleHeaderRow {
   min-height: 15vh;
   vertical-align: middle;
@@ -97,13 +124,15 @@ body {
   margin: auto;
 }
 
-#navbarNav {
-  background-color: white !important;
-}
-
 #nav {
   min-height: 10vh !important;
   border-left: 1vh solid gray;
   border-right: 1vh solid gray;
   border-top: 1vh solid gray;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    background-color: red;
+  }
 }

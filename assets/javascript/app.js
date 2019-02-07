@@ -1,7 +1,27 @@
 $(document).ready(function() {
   AOS.init()
 
-  var productLink
+  $('.projects').on('click', function() {
+    $('.container-fluid').fadeOut(500, function() {
+      window.location.href = 'projects.html'
+    })
+  })
+
+  $('.contact').on('click', function() {
+    $('.container-fluid').fadeOut(500, function() {
+      window.location.href = 'contact.html'
+    })
+  })
+
+  $('.home').on('click', function() {
+    $('.container-fluid').fadeOut(500, function() {
+      window.location.href = 'index.html'
+    })
+  })
+
+  $('.navbar-brand').on('click', function() {
+    window.location.href = 'https://github.com/teamjuli0?tab=repositories'
+  })
 
   // Redirect to new tab with GitHub links
   $('.fitHub').on('click', function() {
