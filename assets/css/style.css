@@ -213,7 +213,7 @@ body {
 }
 
 .widthAdjust {
-  max-width: 80vw;
+  width: 100vw;
   margin: auto;
   padding: 0;
 }
@@ -245,15 +245,6 @@ body {
 @media screen and (max-width: 480px) {
   #portfolioLg {
     display: none !important;
-  }
-
-  #mobileTempMsg {
-    margin: auto;
-    margin-top: 30vw;
-    width: 90vw;
-    font-size: 20px;
-    font-weight: 900;
-    text-align: center;
   }
 }
 
