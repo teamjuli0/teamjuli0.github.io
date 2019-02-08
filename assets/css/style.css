@@ -1,5 +1,5 @@
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Fira Sans', sans-serif;
   border: 1vh solid gray;
   display: block;
   background: #eeeee7;
@@ -22,8 +22,119 @@ body {
 
 .borderLg {
   margin: auto;
+  margin-top: 1vw;
   width: 100%;
   border-bottom: 1px solid gray;
+}
+
+.cardBody {
+  background: white;
+  border-radius: 0px 10px 0px 0px;
+  height: 20vw;
+  width: 50vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.cardBodySm {
+  height: 55vw;
+  background-color: white;
+  padding-top: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.cardDesc {
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  font-size: 15px;
+  color: #696969;
+}
+
+.cardDescSm {
+  font-family: Merriweather, serif;
+  font-size: 13px;
+}
+
+.cardImage {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.cardImageSm {
+  height: 70vw;
+  width: 70vw;
+  border-radius: 5px 5px;
+}
+
+.cardLink {
+  text-decoration: none;
+  font-size: 13px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.cardLinkSpan {
+  font-size: 15px;
+}
+
+.cardShadow {
+  -webkit-box-shadow: 0 0 20px gray;
+  -moz-box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px gray;
+  width: 75vw;
+  margin: auto;
+  margin-bottom: 5vw;
+  background-color: #464b57;
+  padding: 0;
+  padding-bottom: 10vw;
+  height: 25vw;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.cardShadowSm {
+  width: 70vw;
+  min-height: 130vw;
+  background: #464b57;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px gray;
+  -moz-box-shadow: 0 0 25px gray;
+  box-shadow: 0 0 25px gray;
+  margin-bottom: 10vw;
+}
+
+.cardTech {
+  color: white;
+  padding-left: 2vw;
+  padding-right: 3vw;
+  font-size: 12px;
+}
+
+.cardTechSm {
+  height: 10vw;
+  text-align: center;
+  margin: auto;
+}
+
+.cardTechImg {
+  height: 5vw;
+  padding-left: 1vw;
+}
+
+.cardTechImgOne {
+  height: 5vw;
+  padding-left: 3vw;
+}
+
+.cardTechImgSm {
+  height: 10vw;
+  margin-left: 3vw;
+}
+
+.cardTechImgOneSm {
+  height: 10vw;
 }
 
 .logo {
@@ -48,61 +159,6 @@ body {
   font-weight: 900;
 }
 
-.cardBody {
-  background: white;
-  border-radius: 0px 10px 0px 0px;
-  height: 20vw;
-  width: 45vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-.cardDesc {
-  padding-bottom: 1vw;
-  padding-top: 1vw;
-  font-size: 13px;
-}
-
-.cardImage {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.cardLink {
-  text-decoration: none;
-  font-size: 13px;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-}
-
-.cardLinkSpan {
-  font-size: 15px;
-}
-
-.cardShadow {
-  -webkit-box-shadow: 0 0 20px gray;
-  -moz-box-shadow: 0 0 20px gray;
-  box-shadow: 0 0 20px gray;
-}
-
-.cardTech {
-  color: white;
-  padding-left: 2vw;
-  padding-right: 3vw;
-  font-size: 12px;
-}
-
-.cardTechImg {
-  height: 5vw;
-  padding-left: 1vw;
-}
-
-.cardTechImgOne {
-  height: 5vw;
-  padding-left: 3vw;
-}
-
 .rowBitmoji {
   animation: 1.4s ease-out 0s 1 slideInFromLeft;
   height: 45vh;
@@ -116,6 +172,7 @@ body {
   padding-top: 15px;
   font-style: italic;
   font-size: 15px;
+  font-family: 'Merriweather', serif;
 }
 
 .smallDescPortfolio {
@@ -180,13 +237,13 @@ body {
 }
 
 @media screen and (min-width: 481px) {
-  #mobileTempMsg {
+  #portfolioSm {
     display: none !important;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #portfolio {
+  #portfolioLg {
     display: none !important;
   }
 
@@ -197,5 +254,11 @@ body {
     font-size: 20px;
     font-weight: 900;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cardDesc {
+    font-size: 13px;
   }
 }
