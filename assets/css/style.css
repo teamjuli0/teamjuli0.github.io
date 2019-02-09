@@ -3,7 +3,6 @@ body {
   border: 1vh solid gray;
   display: block;
   background: #eeeee7;
-  overflow: hidden;
 }
 
 #nav {
@@ -11,7 +10,6 @@ body {
   border-left: 1vh solid gray;
   border-right: 1vh solid gray;
   border-top: 1vh solid gray;
-  width: 100vw;
 }
 
 .borderBottom {
@@ -105,7 +103,6 @@ body {
   background: #464b57;
   margin: auto;
   border-radius: 5px;
-
   margin-bottom: 10vw;
 }
 
@@ -217,7 +214,7 @@ body {
 }
 
 .widthAdjust {
-  max-width: 80vw;
+  max-width: 85vw;
   padding: 0;
 }
 
