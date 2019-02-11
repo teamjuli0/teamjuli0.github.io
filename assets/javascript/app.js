@@ -1,6 +1,16 @@
 $(document).ready(function() {
   AOS.init()
 
+  $('.navbar-brand').on('click', function() {
+    window.location.href = 'https://github.com/teamjuli0?tab=repositories'
+  })
+
+  $('.home').on('click', function() {
+    $('.container-fluid').fadeOut(500, function() {
+      window.location.href = 'index.html'
+    })
+  })
+
   $('.projects').on('click', function() {
     $('.container-fluid').fadeOut(500, function() {
       window.location.href = 'projects.html'
@@ -13,54 +23,20 @@ $(document).ready(function() {
     })
   })
 
-  $('.home').on('click', function() {
-    $('.container-fluid').fadeOut(500, function() {
-      window.location.href = 'index.html'
-    })
+  $('.portfolioImg').on('click', function() {
+    window.location = 'https://teamjuli0.github.io/'
   })
 
-  $('.navbar-brand').on('click', function() {
-    window.location.href = 'https://github.com/teamjuli0?tab=repositories'
+  $('.tabernaculo').on('click', function() {
+    window.open('https://teamjuli0.github.io/tabernaculo')
   })
 
-  // Redirect to new tab with GitHub links
-  $('.fitHub').on('click', function() {
-    productLink = $(this).attr(
-      'href',
-      'https://frozen-eyrie-10750.herokuapp.com/'
-    )
-    productLink.attr('target', '_blank')
-    window.open(productLink.attr('href'))
+  $('.triviaGame').on('click', function() {
+    window.open('https://teamjuli0.github.io/TriviaGame/')
   })
 
-  $('.oneReview').on('click', function() {
-    productLink = $(this).attr('href', 'https://teamjuli0.github.io/oneReview/')
-    productLink.attr('target', '_blank')
-    window.open(productLink.attr('href'))
-  })
-
-  $('.triviaGameWebsite').on('click', function() {
-    productLink = $(this).attr(
-      'href',
-      'https://teamjuli0.github.io/TriviaGame/'
-    )
-    productLink.attr('target', '_blank')
-    window.open(productLink.attr('href'))
-  })
-
-  $('.gifTastic').on('click', function() {
-    productLink = $(this).attr('href', 'https://teamjuli0.github.io/GifTastic/')
-    productLink.attr('target', '_blank')
-    window.open(productLink.attr('href'))
-  })
-
-  $('.liriNodeApp').on('click', function() {
-    productLink = $(this).attr(
-      'href',
-      'https://github.com/teamjuli0/liri-node-app'
-    )
-    productLink.attr('target', '_blank')
-    window.open(productLink.attr('href'))
+  $('.liri').on('click', function() {
+    window.open('https://github.com/teamjuli0/liri-node-app')
   })
 
   // Scroll to top of each section
@@ -68,24 +44,6 @@ $(document).ready(function() {
     $('html, body').animate(
       {
         scrollTop: $('#unique').offset().top
-      },
-      'slow'
-    )
-  })
-
-  $('.aboutMeButton').on('click', function() {
-    $('html, body').animate(
-      {
-        scrollTop: $('.aboutMe').offset().top
-      },
-      'slow'
-    )
-  })
-
-  $('.contactButton').on('click', function() {
-    $('html, body').animate(
-      {
-        scrollTop: $('#contact').offset().top
       },
       'slow'
     )
