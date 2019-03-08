@@ -32,7 +32,7 @@ $(document).ready(function() {
   })
 
   $('.triviaGame').on('click', function() {
-    window.open('https://teamjuli0.github.io/TriviaGame/')
+    window.open('https://fast-thicket-56056.herokuapp.com/')
   })
 
   $('.liri').on('click', function() {
@@ -72,20 +72,10 @@ $(document).ready(function() {
     }, 5000)
 
     // Determine if email is valid or not
-    if (
-      email.length > 5 &&
-      email.includes('@') &&
-      email.includes('.') &&
-      name.length > 2 &&
-      message.length > 5
-    ) {
-      statusElm.append(
-        '<h3 class="uk-logo">Email has been sent. Thank you!</h3>'
-      )
+    if (email.length > 5 && email.includes('@') && email.includes('.') && name.length > 2 && message.length > 5) {
+      statusElm.append('<h3 class="uk-logo">Email has been sent. Thank you!</h3>')
     } else {
-      statusElm.append(
-        '<h3 class="uk-logo">Please Complete Form Correctly!</h3>'
-      )
+      statusElm.append('<h3 class="uk-logo">Please Complete Form Correctly!</h3>')
 
       // If invalid, prevent form from sending email
       event.preventDefault()
