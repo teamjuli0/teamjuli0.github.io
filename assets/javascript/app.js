@@ -28,7 +28,7 @@ $(document).ready(function() {
   })
 
   $('.tabernaculo').on('click', function() {
-    window.open('https://tabernaculo.netlify.con')
+    window.open('https://tabernaculo.netlify.com')
   })
 
   $('.triviaGame').on('click', function() {
