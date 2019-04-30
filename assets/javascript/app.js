@@ -28,7 +28,7 @@ $(document).ready(function() {
   })
 
   $('.tabernaculo').on('click', function() {
-    window.open('https://teamjuli0.github.io/tabernaculo')
+    window.open('https://tabernaculo.netlify.con')
   })
 
   $('.triviaGame').on('click', function() {
