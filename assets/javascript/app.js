@@ -32,7 +32,7 @@ $(document).ready(function() {
   })
 
   $('.triviaGame').on('click', function() {
-    window.open('https://fast-thicket-56056.herokuapp.com/')
+    window.open('https://trivia.teamjuli0.com/')
   })
 
   $('.liri').on('click', function() {
