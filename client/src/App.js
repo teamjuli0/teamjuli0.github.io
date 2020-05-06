@@ -1,9 +1,39 @@
 import React from 'react'
-import { Home } from './views'
+import { TopBanner, Home } from './views'
+import { Navbar } from './components/nav'
 import './App.css'
 
-function App() {
-  return <Home />
+class App extends React.Component {
+  state = {
+    isMobile: false,
+  }
+
+  componentWillMount() {
+    const isMobile = window.innerWidth < 440
+    if (isMobile !== this.state.isMobile) {
+      this.setState({ isMobile })
+    }
+    document.addEventListener('scroll', () => {
+      const isMobile = window.innerWidth < 440
+      if (isMobile !== this.state.isMobile) {
+        this.setState({ isMobile })
+      }
+    })
+  }
+
+  render() {
+    return (
+      <>
+        <TopBanner />
+        {this.state.isMobile ? (
+          <Navbar titleSize='35px' magicSize='13px' />
+        ) : (
+          <Navbar titleSize='40px' magicSize='15px' />
+        )}
+        <Home />
+      </>
+    )
+  }
 }
 
 export default App

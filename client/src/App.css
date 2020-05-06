@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
-.rotate {
-  animation: rotation 360s infinite linear;
+html {
+  background: #ecf0f1;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.uk-navbar {
+  background-color: #252c2c !important;
 }
