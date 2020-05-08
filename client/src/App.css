@@ -12,3 +12,11 @@ body {
 .uk-navbar {
   background-color: #252c2c !important;
 }
+
+.uk-navbar-dropdown {
+  background-color: #252c2c !important;
+}
+
+.uk-navbar-dropbar {
+  background-color: #252c2c !important;
+}

@@ -30,7 +30,14 @@ class App extends React.Component {
         ) : (
           <Navbar titleSize='40px' magicSize='15px' />
         )}
-        <Home />
+        <div
+          classname='uk-container'
+          style={{
+            backgroundColor: '#3a4141',
+          }}
+        >
+          <Home />
+        </div>
       </>
     )
   }
