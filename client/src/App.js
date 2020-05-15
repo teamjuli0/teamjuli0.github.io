@@ -24,16 +24,22 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <TopBanner />
+        {this.state.isMobile ? (
+          <TopBanner mainHeader='50px' />
+        ) : (
+          <TopBanner mainHeader='60px' />
+        )}
         {this.state.isMobile ? (
           <Navbar titleSize='35px' magicSize='13px' />
         ) : (
           <Navbar titleSize='40px' magicSize='15px' />
         )}
         <div
-          classname='uk-container'
+          className='container-fluid'
           style={{
             backgroundColor: '#3a4141',
+            // height: '700px',
+            padding: '20px 0 20px 0',
           }}
         >
           <Home />

@@ -10,7 +10,7 @@ const VideoBg = (props) => (
     <div
       style={{
         height: '417px',
-        width: '100vw',
+        width: '100%',
       }}
     >
       <div
@@ -19,7 +19,7 @@ const VideoBg = (props) => (
           position: 'absolute',
           zIndex: 1,
           height: '417px',
-          width: '100vw',
+          width: '100%',
         }}
       >
         <div
