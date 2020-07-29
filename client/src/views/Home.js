@@ -1,124 +1,173 @@
 import React from 'react'
-import { smileBitmoji } from '../images/ect'
+import { MainCard } from '../components/cards'
+import {
+  TriviaImg,
+  LiriImg,
+  TabernaculoImg,
+  PortfolioImg,
+} from '../images/html-images'
 
-const Home = () => (
+const Home = (props) => (
   <>
     <div
-      style={{
-        margin: 'auto',
-        maxWidth: '1000px',
-        display: 'flex',
-      }}
-    >
-      <div
-        style={{
-          margin: 'auto',
-          width: '288px',
-          display: 'box',
-        }}
-      >
-        <div
-          style={{
-            height: '517px',
-            width: '288px',
-            backgroundColor: '#4d5454',
-            // margin: '0 100px',
-            borderRadius: '5px 30px 30px 30px',
-            overflow: 'hidden',
-            boxShadow: '0 0 20px 0 #141414',
-            MozBoxShadow: '0 0 20px 0 #141414',
-            WebkitBoxShadow: '0 0 20px 0 #141414',
-          }}
-        >
-          <div
-            style={{
-              // padding: '0 0 5px 0',
-              // fontStyle: 'italic',
-              borderRadius: '0 0 10px 20px',
-              // overflow: 'hidden',
-              backgroundColor: '#b7baba',
-              boxShadow: '0 0 20px 0 #141414',
-              MozBoxShadow: '0 0 20px 0 #141414',
-              WebkitBoxShaddisplay: 'flex',
-              ow: '0 0 20px 0 #141414',
-            }}
-          >
-            <img
-              src={smileBitmoji}
-              style={{
-                width: '100%',
-                padding: '10px',
-              }}
-            />
-            <p
-              style={{
-                textAlign: 'center',
-                fontSize: '30px',
-                margin: '0 0 25px 0',
-                color: '#262a2a',
-                lineHeight: '40px',
-                fontWeight: 'bold',
-                // padding: '0 10px',
-                backgroundColor: '#b7baba',
-                borderRadius: '0 0 200px 100px',
-              }}
-            >
-              About Me
-            </p>
-          </div>
-          <div
-            style={{
-              width: '100%',
-              // height: '183px',
-              backgroundColor: '#4d5454',
-              // padding: '5px 0 0 0',
-              fontStyle: 'italic',
-              // margin: '-10',
-              // borderTop: '2px solid #434343',
-              // boxShadow: '0 0 3px 0 #000000',
-              // MozBoxShadow: '0 0 3px 0 #000000',
-              // WebkitBoxShadow: '0 0 3px 0 #000000',
-            }}
-          >
-            <p
-              style={{
-                padding: '0 30px 15px 30px',
-                margin: '0',
-                fontSize: '14px',
-                color: '#dedede',
-              }}
-            >
-              I strive to build simple, yet elegant web applications with
-              functionality and value at the core. The only time I'm not
-              clicking away at a keyboard is when I'm kicking a ball with my
-              son.
-            </p>
-          </div>
-          <div
-            style={{
-              height: '25px',
-              width: '100%',
-              backgroundColor: '#3d4343',
-              fontStyle: 'italic',
-              fontSize: '14px',
+      style={
+        props.currentWidth < 776
+          ? {
               margin: 'auto',
-              color: '#a6a9a9',
-              lineHeight: '24px',
-              padding: '0 20px 0 10px',
-              textAlign: 'center',
-            }}
-          >
-            Also, Dad jokes will never die
-          </div>
-        </div>
+              minHeight: '517px',
+              maxWidth: '1000px',
+            }
+          : {
+              margin: 'auto',
+              minHeight: '517px',
+              maxWidth: '800px',
+              display: 'flex',
+              // background: '#696969',
+              // borderRadius: '10px 35px',
+              // boxShadow: '0 0 20px 0 #141414',
+              // MozBoxShadow: '0 0 20px 0 #141414',
+              // WebkitBoxShadow: '0 0 20px 0 #141414',
+            }
+      }
+    >
+      <MainCard currentWidth={props.currentWidth} isMobile={props.isMobile} />
+      <div
+        style={
+          props.currentWidth < 776
+            ? {
+                margin: 'auto',
+              }
+            : {
+                width: '170px',
+                margin: 'auto',
+              }
+        }
+      >
+        <a href='https://trivia.teamjuli0.com/'>
+          <div
+            style={
+              props.currentWidth < 776
+                ? {
+                    width: '280px',
+                    height: '280px',
+                    margin: '45px auto 30px auto',
+                    backgroundImage: `url(${TriviaImg})`,
+                    backgroundSize: 'cover',
+                    borderRadius: '10px',
+                    boxShadow: '0 0 20px 0 #141414',
+                    MozBoxShadow: '0 0 20px 0 #141414',
+                    WebkitBoxShadow: '0 0 20px 0 #141414',
+                    transform: 'rotate(5deg)',
+                  }
+                : {
+                    width: '210px',
+                    height: '210px',
+                    margin: '30px auto',
+                    backgroundImage: `url(${TriviaImg})`,
+                    backgroundSize: 'cover',
+                    borderRadius: '10px',
+                    boxShadow: '0 0 20px 0 #141414',
+                    MozBoxShadow: '0 0 20px 0 #141414',
+                    WebkitBoxShadow: '0 0 20px 0 #141414',
+                    transform: 'rotate(5deg)',
+                  }
+            }
+          ></div>
+        </a>
+
+        <div
+          style={
+            props.currentWidth < 776
+              ? {
+                  width: '280px',
+                  height: '280px',
+                  margin: '30px auto',
+                  backgroundImage: `url(${TabernaculoImg})`,
+                  backgroundSize: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 0 20px 0 #141414',
+                  MozBoxShadow: '0 0 20px 0 #141414',
+                  WebkitBoxShadow: '0 0 20px 0 #141414',
+                  transform: 'rotate(-5deg)',
+                }
+              : {
+                  width: '170px',
+                  height: '170px',
+                  margin: '30px auto',
+                  backgroundImage: `url(${TabernaculoImg})`,
+                  backgroundSize: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 0 20px 0 #141414',
+                  MozBoxShadow: '0 0 20px 0 #141414',
+                  WebkitBoxShadow: '0 0 20px 0 #141414',
+                  transform: 'rotate(-5deg)',
+                }
+          }
+        ></div>
       </div>
       <div
         style={{
           margin: 'auto',
-          display: 'box',
         }}
       >
-        {/* Hello World */}
+        <div
+          style={
+            props.currentWidth < 776
+              ? {
+                  width: '280px',
+                  height: '280px',
+                  margin: '30px auto',
+                  backgroundImage: `url(${LiriImg})`,
+                  backgroundSize: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 0 20px 0 #141414',
+                  MozBoxShadow: '0 0 20px 0 #141414',
+                  WebkitBoxShadow: '0 0 20px 0 #141414',
+                  transform: 'rotate(-2deg)',
+                }
+              : {
+                  width: '160px',
+                  height: '160px',
+                  margin: '30px auto',
+                  backgroundImage: `url(${LiriImg})`,
+                  backgroundSize: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 0 20px 0 #141414',
+                  MozBoxShadow: '0 0 20px 0 #141414',
+                  WebkitBoxShadow: '0 0 20px 0 #141414',
+                  transform: 'rotate(-2deg)',
+                }
+          }
+        ></div>
+        <div
+          style={
+            props.currentWidth < 776
+              ? {
+                  width: '280px',
+                  height: '280px',
+                  margin: '30px auto',
+                  backgroundImage: `url(${PortfolioImg})`,
+                  backgroundSize: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 0 20px 0 #141414',
+                  MozBoxShadow: '0 0 20px 0 #141414',
+                  WebkitBoxShadow: '0 0 20px 0 #141414',
+                  transform: 'rotate(3deg)',
+                }
+              : {
+                  width: '200px',
+                  height: '200px',
+                  margin: '30px auto',
+                  backgroundImage: `url(${PortfolioImg})`,
+                  backgroundSize: 'cover',
+                  borderRadius: '10px',
+                  boxShadow: '0 0 20px 0 #141414',
+                  MozBoxShadow: '0 0 20px 0 #141414',
+                  WebkitBoxShadow: '0 0 20px 0 #141414',
+                  transform: 'rotate(3deg)',
+                }
+          }
+        ></div>
       </div>
     </div>
   </>
