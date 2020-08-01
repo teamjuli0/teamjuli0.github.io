@@ -1,6 +1,0 @@
-export { default as TriviaImg } from './triviaGame.png'
-export { default as TabernaculoImg } from './tabernaculo.png'
-export { default as PortfolioImg } from './portfolio.png'
-export { default as LiriImg } from './liri.png'
-export { default as SandImg } from './sand.jpg'
-export { default as GradientImg } from './gradiant.jpeg'
