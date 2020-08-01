@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import { ClickableLink } from './components'
+import { Bitmoji, LinkedIn } from './images/'
 
 const App = () => {
   return (
@@ -35,11 +36,8 @@ const App = () => {
           </p>
           <div
             style={{
-              width: '100%',
-              minHeight: '450px',
-              border: '8px solid #f6f6f2',
-              backgroundColor: 'rgba(47, 47, 45, 0)',
-              borderRadius: '30px',
+              border: '6px solid #f6f6f2',
+              borderRadius: '20px',
               boxShadow: '0 0 25px #4c4c4c',
               color: 'white',
               fontFamily: 'Fira Code, monospace',
@@ -52,8 +50,8 @@ const App = () => {
               style={{
                 width: '100%',
                 height: '100%',
-                minHeight: '450px',
-                padding: '15px',
+                minHeight: '380px',
+                padding: '12px',
                 backgroundColor: 'rgba(47, 47, 45, .8)',
                 overflowX: 'auto',
               }}
@@ -183,6 +181,132 @@ const App = () => {
                     opacity: '1',
                   }}
                 ></div>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              position: 'relative',
+              zIndex: '1',
+              margin: '-40px 30px 0 auto',
+              float: 'right',
+              bottom: '0px',
+              right: '0px',
+              height: '80px',
+              width: '80px',
+              borderRadius: '50%',
+              backgroundColor: '#1686b0',
+              boxShadow: '0 0 15px black',
+            }}
+          >
+            <a href='https://www.linkedin.com/in/teamjuli0/'>
+              <img
+                src={LinkedIn}
+                style={{
+                  height: '80px',
+                  width: '80px',
+                  border: '3px solid #9cbdca',
+                  borderRadius: '50%',
+                }}
+              />
+            </a>
+          </div>
+          <div
+            style={{
+              // backgroundImage: `url('${Bitmoji}')`,
+              position: 'relative',
+              float: 'right',
+              margin: '-40px 15px 0 auto',
+              backgroundColor: '#31363b',
+              zIndex: '1',
+              bottom: '0px',
+              right: '0px',
+              height: '80px',
+              width: '80px',
+              // backgroundSize: 'cover',
+              borderRadius: '50%',
+              boxShadow: '0 0 15px black',
+            }}
+          >
+            <a href='https://teamjuli0.com'>
+              <img
+                src={Bitmoji}
+                style={{
+                  borderRadius: '50%',
+                  border: '3px solid #cccccc',
+                  height: '80px',
+                  width: '80px',
+                }}
+              />
+            </a>
+          </div>
+          <a
+            href='#'
+            type='button'
+            // className='btn btn-primary'
+            data-toggle='modal'
+            data-target='#exampleModal'
+            style={{
+              textDecoration: 'none',
+              color: '#baeae1',
+              position: 'relative',
+              zIndex: '1',
+              margin: '-40px 15px 0 auto',
+              float: 'right',
+              bottom: '0px',
+              right: '0px',
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: '#12836d',
+                height: '80px',
+                width: '80px',
+                borderRadius: '50%',
+                boxShadow: '0 0 15px black',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                border: '3px solid #75d6c3',
+                fontSize: '60px',
+                padding: '12px 0 0 3px',
+              }}
+            >
+              <p>?</p>
+            </div>
+          </a>
+          <div
+            className='modal fade'
+            id='exampleModal'
+            tabindex='-1'
+            role='dialog'
+            aria-labelledby='exampleModalLabel'
+            aria-hidden='true'
+          >
+            <div className='modal-dialog modal-dialog-centered'>
+              <div className='modal-content'>
+                <div className='modal-header'>
+                  <h5 className='modal-title' id='exampleModalLabel'>
+                    Instructions
+                  </h5>
+                </div>
+                <div className='modal-body'>
+                  <p>
+                    Welcome to my terminal portfolio! To check out my most
+                    recent projects, LinkedIn, or send me an email, just click
+                    on the blue links that appear throughout the terminal.
+                    That's all there is to it, kinda fun right?
+                  </p>
+                </div>
+                <div className='modal-footer'>
+                  <button
+                    className='modal-btn'
+                    type='button'
+                    data-dismiss='modal'
+                  >
+                    Take me back!
+                  </button>
+                </div>
               </div>
             </div>
           </div>
