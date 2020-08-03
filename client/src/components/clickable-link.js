@@ -5,11 +5,11 @@ const ClickableLink = (props) => (
     style={
       props.margin
         ? {
-            color: '#4ca1c6',
+            color: '#7892ff',
             marginRight: '25px',
           }
         : {
-            color: '#4ca1c6',
+            color: '#7892ff',
           }
     }
     href={props.link}

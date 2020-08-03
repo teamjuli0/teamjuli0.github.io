@@ -78,18 +78,13 @@ const App = () => {
                 />
                 <ClickableLink
                   margin={true}
-                  link='#'
+                  link='https://southportagenciesinc.teamjuli0.com/'
                   name='SouthportAgencies.html'
                 />
                 <ClickableLink
                   margin={true}
-                  link='https://trivia.teamjuli0.com'
-                  name='Trivia!.html'
-                />
-                <ClickableLink
-                  margin={true}
-                  link='https://github.com/teamjuli0/liri-node-app'
-                  name='LiriNodeApp.js'
+                  link='https://drive.google.com/file/d/1HgDDJIjVUSs4VXAW8WIX412aL_z6Tm-x/view?usp=sharing'
+                  name='Experience(Resume).pdf'
                 />
               </div>
 
@@ -123,7 +118,7 @@ const App = () => {
                   link='mailto:valdezjulio95@gmail.com'
                   name='email.html'
                 />
-                <ClickableLink margin={true} link='#' name='contact-info.txt' />
+                {/* <ClickableLink margin={true} link='#' name='contact-info.txt' /> */}
               </div>
 
               <div>
