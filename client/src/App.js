@@ -24,6 +24,7 @@ const App = () => {
           }}
         >
           <p
+            className='noselect'
             style={{
               textAlign: 'center',
               fontSize: '60px',
