@@ -223,7 +223,7 @@ const App = () => {
               boxShadow: '0 0 15px black',
             }}
           >
-            <a href='https://teamjuli0.com'>
+            <a href='https://drive.google.com/file/d/1HgDDJIjVUSs4VXAW8WIX412aL_z6Tm-x/view?usp=sharing'>
               <img
                 src={Bitmoji}
                 style={{
