@@ -53,41 +53,44 @@
       <!-- Main -->
       <div id="main">
         <div class="inner">
-          <h1>Generic Page</h1>
+          <h1>Wall of Honor</h1>
           <span class="image main"
-            ><img src="../images/pic13.jpg" alt=""
+            ><img
+              src="../images/wallOfHonor.jpg"
+              alt=""
+              style="width: 100%; height: 200px; object-fit: cover"
           /></span>
-          <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
-            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-            Curabitur sapien risus, commodo eget turpis at, elementum convallis
-            elit. Pellentesque enim turpis, hendrerit tristique.
+          <p
+            style="
+              font-weight: bold;
+              font-size: 21px;
+              line-height: 30px;
+              margin-bottom: 5px;
+            "
+          >
+            Here you will find a very small portion out of the large pool of
+            positive feedback I've recieved during my time as a tutor. I call
+            this my wall of honor because it shows the difference one can make
+            in others lives while also having the opportunity to grow along side
+            them. One of my biggest passions has always been helping others so
+            to me this...
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel venenatis
-            mauris vehicula hendrerit.
+          <p
+            style="
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 30px;
+              margin-bottom: 30px;
+              font-style: italic;
+              text-align: right;
+            "
+          >
+            this is priceless.
           </p>
-          <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-            risus, commodo eget turpis at, elementum convallis elit.
-            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
-          </p>
+          <div
+            id="feedbackDiv"
+            style="border-top: 1px solid #cccccc; padding-top: 20px"
+          ></div>
         </div>
       </div>
 
@@ -173,10 +176,38 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      const feedback = [
+        `Julio was excellent. He made me feel very comfortable in asking even the most basic of questions and was very clear in his explanations. He also gave me excellent tips on how to manage the workload of the bootcamp. I look forward to more sessions!`,
+        `Julio always is positive and has great examples to answer all my questions.`,
+
+        `I’ve been super stressed out since I got laid off due to covid and I've been looking for a new job to pay school and rent, etc. I just couldn't start the module this week, but Julio explained everything so well that it made me feel relieved that I can understand what MySQL is about. I am able to understand the syntax and how the update insert select works! I felt like giving up at this point due to how I was working very long and am now suddenly unemployed and school has just been hard but Julio always gives me courage to keep pushing and keep learning! Just the way he helps me out feels like I am doing great at understanding the concepts, I just need time and practice to get really good!
+      `,
+        `Julio always is determined to help me understand the material and goes above a beyond to help find answers to further my knowledge.`,
+        `Julio makes the materials easy to understand.`,
+        `Great every single time.`,
+        `Julio has turned what began as a discouraging day in class into excitement for coding because I finally understand something again!`,
+        `Julio has been amazing through the entire course.`,
+        `Julio is the bomb and I would have dropped out or failed if not for him.
+        `,
+        `Excellent tutoring. Julio is great at understanding my questions and prioritizing how we discuss topics, as well as explaining how to think about the programming.`,
+        `Julio is great and I am glad I have him as a resource`,
+      ]
+
+      const feedbackDiv = $('#feedbackDiv')
+
+      $.each(feedback, function (i, value) {
+        feedbackDiv.append(
+          $(
+            `<p style="font-size: 20px;">"${feedback[i]}"</p><div style="border-bottom: 1px solid #cccccc; margin-bottom: 25px;"></div>`
+          )
+        )
+      })
+    </script>
   </body>
 </html>
